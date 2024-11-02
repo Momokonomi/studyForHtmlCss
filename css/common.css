@@ -1,0 +1,38 @@
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  --accent-font-color: #80ba4a;
+}
+
+.pop {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto; /*上下 0 左右auto*/
+
+  max-width: 1120px; /*どれだけ画面が大きくとも最大1120px*/
+
+  position: relative; /*擬似要素のpositionがabsoluteのため指定*/
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /*画面幅が極端に小さくなった際に自動で縦並びになる*/
+  align-items: center; /*親要素を基準に高さの中央に寄せる*/
+}
+
+/*フッター*/
+footer {
+  text-align: center;
+  margin: 90px 0;
+}
+
+.copyright {
+  font-size: 12px;
+  margin-top: 39px;
+}

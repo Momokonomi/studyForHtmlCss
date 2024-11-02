@@ -1,0 +1,39 @@
+header {
+  padding: 27px 0; /*3の倍数を指定する(デザインルール：倍数で決めると統一感がでる)*/
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  background-color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.04em; /*？emとは*/
+}
+
+.logo span {
+  color: var(--accent-font-color);
+}
+
+.header_menu li {
+  padding-left: 39px;
+}
+
+.header_menu li a {
+  transition: 0.3s; /*0.3secで他の色から黒色に*/
+}
+
+.header_menu li a:hover {
+  color: var(--accent-font-color);
+  transition: 0.3s; /*0.3secで緑色に*/
+}
+
+@media only screen and (max-width: 760px) {
+  header .container {
+    justify-content: center;
+  }
+  .header_menu li {
+    padding: 21px 15px 0;
+  }
+}

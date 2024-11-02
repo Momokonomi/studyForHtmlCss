@@ -1,0 +1,77 @@
+#concept {
+  margin-bottom: 120px;
+}
+.title {
+  font-size: 21px;
+  font-weight: 500;
+  color: var(--accent-font-color); /*変数：緑色にする*/
+  margin-bottom: 39px;
+}
+
+section h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.column-2 {
+  width: 48%;
+}
+
+.text {
+  line-height: 2; /*何が基準の値？*/
+}
+
+.concept-img {
+  height: 330px; /*3*180*/
+  background-image: url("../images/1.jpg");
+  background-position: center; /*中央揃え*/
+  background-size: cover; /*画面全体に表示*/
+
+  border-radius: 21px;
+}
+
+.heading {
+  font-family: "Dancing Script", cursive;
+  font-size: 200px;
+  font-weight: 700;
+  color: var(--accent-font-color);
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-30%); /*縦幅の30%上？？*/
+  z-index: -1;
+}
+
+/*サービス*/
+#service {
+  margin-bottom: 120px;
+}
+
+.service-inner {
+  margin-bottom: 39px;
+  position: relative;
+}
+
+.column-40 {
+  width: 40%;
+  height: 100%;
+}
+
+.column-55 {
+  width: 55%;
+}
+
+#service img {
+  border-radius: 21px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.column-55 h3 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.03;
+}

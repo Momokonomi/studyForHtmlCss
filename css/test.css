@@ -1,0 +1,240 @@
+html {
+  font-family: "Noto Sans JP", sans-serif;
+  --accent-font-color: #80ba4a;
+}
+
+/* =============共通============== */
+/* フォント */
+.font-ds {
+  font-family: "Dancing Script", cursive;
+}
+
+main section {
+  margin-bottom: 90px;
+}
+
+/*.container：要素を中央に配置する*/
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1120px;
+}
+/* .flex：要素を横並びにする*/
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* 親要素の縦幅に対して中央揃え */
+.center {
+  align-items: center;
+}
+
+/* .accent：文字の色を緑色に変更する */
+.accent {
+  color: var(--accent-font-color);
+}
+/* .image-container：画像を表示するボックス。大きい場合は一部のみ表示 */
+.image-container {
+  position: relative;
+  display: inline-block;
+  height: 480px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.image-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* =============ヘッダー============== */
+header {
+  padding: 27px 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: 900;
+  letter-spacing: -0.1rem;
+}
+
+.header_menu li {
+  margin: 0 21px;
+}
+
+.header_menu a {
+  transition: 0.3s;
+}
+
+.header_menu a:hover {
+  color: var(--accent-font-color);
+  transition: 0.3s;
+}
+
+/* =============メイン============== */
+#first-main {
+  position: relative;
+}
+
+/* .title：hero画像上の中央に表示。文字色白 */
+.title {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  display: flex; /*これわからん。説明ができない*/
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  /* 文字設定 */
+  color: white;
+}
+
+.title span {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.title h1 {
+  font-size: 33px;
+  font-weight: 900;
+}
+
+/* =============== article ================= */
+
+.article {
+  position: relative;
+}
+
+.article-title {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 39px;
+}
+
+.article-back-logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 210px;
+  font-weight: 900;
+  opacity: 0.2;
+  z-index: -1;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-30%);
+}
+
+.article h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 42px;
+}
+
+.article-description {
+  width: 50%;
+}
+
+.article-img {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.article-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-main {
+  width: 100%;
+  height: 300px; /*pxの値は要検討*/
+}
+
+.service-article {
+  position: relative;
+}
+
+.service-img {
+  width: 40%;
+  height: 70%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.service-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-description {
+  width: 55%;
+}
+.service-description h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 21px;
+}
+
+.service-back-logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 210px;
+  font-weight: 900;
+  opacity: 0.2;
+  z-index: -1;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-5%);
+}
+
+#company dl {
+  max-width: 900px;
+  margin-left: auto;
+}
+
+#company dt {
+  width: 30%;
+}
+
+#company dd {
+  width: 70%;
+}
+
+#company dt,
+#company dd {
+  padding: 30px 0;
+  border-bottom: #80ba4a solid 1px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: 9px;
+}

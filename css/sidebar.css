@@ -1,0 +1,91 @@
+/* ================ 共通 ================== */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-align: center;
+  align-content: center;
+  background-color: rgb(78, 175, 255);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+
+  width: 80%;
+  border-radius: 33px;
+  margin-right: 11px;
+}
+
+/* ================ ヘッダー ================== */
+header {
+  /*要素の大きさ*/
+  width: 30%;
+  height: 100vh; /*高さを表示画面と同じにする*/
+  /*位置*/
+  margin-right: auto;
+
+  /*サイドバーを固定する*/
+  position: fixed;
+  /*画面を小さくした場合に溢れる子要素をスクロールで確認できるようにする*/
+  overflow-y: auto;
+
+  /*開発用*/
+  /* border: green solid 1px; */
+}
+
+header nav {
+  width: 300px; /*@todo 値は要検討*/
+  margin-left: auto;
+}
+
+.leftnav-item {
+  height: 44px;
+  align-items: center;
+  margin: 11px 0px;
+  /*開発用*/
+  /* border: rgb(255, 42, 42) solid 1px; */
+}
+
+.leftnav-item div {
+  font-size: 1.5rem;
+  margin-left: 11px;
+
+  /*開発用*/
+  /* border: rgb(255, 42, 42) solid 1px; */
+}
+.leftnav-item img {
+  height: 100%;
+  margin-left: 1%;
+  object-fit: scale-down;
+
+  /*開発用*/
+  /* border: green solid 1px; */
+}
+
+/* ================ メイン ================== */
+main {
+  width: 70%;
+  margin-left: auto;
+}
+
+#tweets {
+  width: 50%;
+  margin-right: auto;
+  /*開発用*/
+  border: red solid 1px;
+}
+
+.tweet {
+  border-bottom: 1px black solid;
+  width: 100%;
+  height: 300px;
+}
+
+#trands {
+  width: 40%;
+  height: 700px;
+  position: sticky;
+  /*開発用*/
+  border: green solid 1px;
+}
